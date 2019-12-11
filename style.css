@@ -1,0 +1,151 @@
+body{ 
+	
+	background-image: url("dress.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+	height:145px;
+	width:1000px;
+	margin:0px auto ;
+	word-spacing:3px;
+	font-family:cursive;
+	
+	}
+#index{
+	font-family:snell;
+}
+#header{
+	margin-top:50px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-bottom:10px;
+	font-family: cursive ;
+	font-size : 50px;
+	color: pink;
+	
+}
+#footer{
+	background:white;
+	width:955px;
+	margin:0px auto ;
+	display:block;
+	
+}
+.imgfooter{
+	text-align: right;								/*Membuat ikon sosial media berada disebelah kanan footer*/  
+width: 40px;
+height: 40px;
+border-radius:50%;
+	
+
+}
+.imgfooter2{
+	margin-right:50px;
+	text-align: right;								/*Membuat ikon sosial media berada disebelah kanan footer*/  
+	width: 40px;
+	height: 40px;
+	border-radius:50%;
+
+}
+
+#img{
+display:block;
+margin-left: auto;
+margin-right: auto;
+width: 170px;
+height: 170px;
+border-radius:90%;
+}
+
+p{
+	text-align : justify;
+	text-indent:30px;
+	}
+
+.pilih:link{/*kondisi biasa*/
+	background:pink;
+	color:white;
+}
+.pilih:visited{/*setelah dikunjungi*/
+	background:yellow;
+	
+}
+.pilih:hover{/*kondisi hover - mouse berada diatasnya*/
+	background:red;
+	
+}
+.pilih:active{/*sedang diklik*/
+	background:green;
+}
+.pilih{
+	display:inline-block;
+	text-decoration:none;
+	padding:10px 18px ;
+}
+#wrap{
+	margin-top:50px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:50px;
+	
+}
+#pola{
+	float:left;
+	margin-right:30px;
+} 
+#isitable{
+	
+	background:white;
+	margin-top:50px;
+	
+	}
+#isi-index{
+	font-family: cursive;
+	color: pink;
+	font-size: 40px;
+
+}
+#isitablediri{
+	width:960px;
+	background:white;
+	margin-top:50px;
+}
+.header{
+	width:800px;	
+}
+
+.dropdown {										/*Membuat sitemap samping kanan*/
+  width:200px;
+  position: relative;
+  margin-top: 1px;
+  display: inline-block;  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px skyblue;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-image: url("images/belakang3.jpg");
+}
+.dropdown-content a:hover {
+	border-radius: 30px;
+	background-color: yellow;
+}
+
+.to_top{
+	display:inline-block;
+	position:fixed;
+	right: 5px;
+	color: lightskyblue;
+	cursor:pointer;
+	bottom:0px;
+	font-weight:bold;
+}
+	
+#more{
+	display:none;
+}
