@@ -13,15 +13,12 @@
 	</table>
 
 	<table>
-	<tr>
-		<td><a href ="index.html" class="pilih" >Home</a>
-			<a href="halawal.html" class="pilih">Pengertian</a>
-			<a href="tekdasar.html" class="pilih">Teknik Dasar</a>
-			<a href="pola.html" class="pilih">Dasar Pola</a>
-			<a href="memotong.html" class="pilih">Memotong</a>
-			<a href="jahit.html" class="pilih">Dasar Jahit</a>
-			<a href="finishing.html" class="pilih">Penyelesaian</a>
-			<a href="video.html" class="pilih">Video</a></td></tr><hr>
+		<tr>
+			<td>
+				<?php include('header.php') ?>
+			</td>
+		</tr>
+		<hr>
 	</table>	
 	<div id="isi">
 	<table >
@@ -55,7 +52,7 @@
 		<li>Panjang Punggung = 36 cm
 		<li>Jarak Dada = 17 cm
 		</ol><div="img-pola">
-		<img src="D:\Kuliah\Tugasbesar\badan.jpg" id="pola"><br>
+		<img src="images\badan.jpg" id="pola"><br>
 		KETERANGAN POLA BADAN MUKA:<br><br>
 
 		A – B = 1/6 Lingkar leher + 2 cm<br>
@@ -101,7 +98,7 @@
 		</ol>Nah Jadi deh pola baju yang sudah siap untuk kita gunakan.<br><br>
 		
 		POLA DASAR LENGAN<br><br>
-		<img src="D:\Kuliah\Tugasbesar\lengan.jpg" width="433" height="342"id="pola"><br>
+		<img src="images\lengan.jpg" width="433" height="342"id="pola"><br>
 		
 		Ukuran Yang Diperlukan<ol type="1">
 		<li>Lingkar kerung lengan = 40cm (diukur dari pola badan)<br>
@@ -133,7 +130,7 @@
 		Hubungkan E dengan E2 (sisi lengan bagian belakang), dan D dengan G seperti gambar (sisi lengan bagian muka)<br><br>
 
 		POLA DASAR ROK<br><br>
-		<img src="D:\Kuliah\Tugasbesar\rok.jpg" width="433" height="500" id="pola"><br>
+		<img src="images\rok.jpg" width="433" height="500" id="pola"><br>
 		Keterangan pola rok muka<br><br>
 
 		Menggambar pola rok dimulai dari titik A.<br>
@@ -167,7 +164,7 @@
 		Didalam memindahkan pola perlu diperhatikan garis tengah belakang pola mesti dalam posisi lurus, 
 		garis pinggang dan garis sisi rok bentuknya mesti sama dengan yang asli.</p>
 				POLA DASAR CELANA<br><br>
-		<img src="D:\Kuliah\Tugasbesar\celana.jpg" width="433" height="500" id="pola"><br>
+		<img src="images\celana.jpg" width="433" height="500" id="pola"><br>
 		
 		CARA MENGAMBIL UKURAN :
 		<ol type="1">
@@ -216,26 +213,26 @@
 		
 
 		Sumber:<br><br>
-		http://anaarisanti.blogspot.com/2010/03/pola-dasar-badan-wanita-dewasa.html<br><br></span></p>
+		http://anaarisanti.blogspot.com/2010/03/pola-dasar-badan-wanita-dewasa.php<br><br></span></p>
 			<button onclick="myFunction()" id="myBtn">Read more</button>
 		<hr></hr>
-				Ayoo ... Kirimkan kesan dan pesanmu dengan <a href ="about.html" >Klik Disini</a><br><br><br>
+				Ayoo ... Kirimkan kesan dan pesanmu dengan <a href ="about.php" >Klik Disini</a><br><br><br>
 		
 				</td>
 		<td id="isitable" valign="top">
 			<div class="dropdown"><hr>
   						<h3><span><b><center><u>Video Terkait</u></center></b></span></h3>
   						<div class="dropdown-content">
-    						<a href="video.html"><p><b>Mengukur Badan</b></p></a>
-							<a href="video.html"><p><b>Peralatan Menjahit</b></p></a>
-							<a href="video.html"><p><b>Pola Badan</b></p></a>
-    						<a href="video.html"><p><b>Pola Lengan </b></p></a>
-    						<a href="video.html"><p><b>Pola Rok</b></p></a>
-							<a href="video.html"><p><b>Pola Celana</b></p></a>
-							<a href="video.html"><p><b>Memotong</b></p></a>
-							<a href="video.html"><p><b>Memasang Jarum</b></p></a>
-							<a href="video.html"><p><b>Memasang Benang</b></p></a>
-							<a href="video.html"><p><b>Dll</b></p></a>
+    						<a href="video.php"><p><b>Mengukur Badan</b></p></a>
+							<a href="video.php"><p><b>Peralatan Menjahit</b></p></a>
+							<a href="video.php"><p><b>Pola Badan</b></p></a>
+    						<a href="video.php"><p><b>Pola Lengan </b></p></a>
+    						<a href="video.php"><p><b>Pola Rok</b></p></a>
+							<a href="video.php"><p><b>Pola Celana</b></p></a>
+							<a href="video.php"><p><b>Memotong</b></p></a>
+							<a href="video.php"><p><b>Memasang Jarum</b></p></a>
+							<a href="video.php"><p><b>Memasang Benang</b></p></a>
+							<a href="video.php"><p><b>Dll</b></p></a>
   						</div>
 			</div>
 		

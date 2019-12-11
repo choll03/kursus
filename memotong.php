@@ -15,14 +15,11 @@
 
 	<table>
 	<tr>
-		<td><a href ="index.html" class="pilih" >Home</a>
-			<a href="halawal.html" class="pilih">Pengertian</a>
-			<a href="tekdasar.html" class="pilih">Teknik Dasar</a>
-			<a href="pola.html" class="pilih">Dasar Pola</a>
-			<a href="memotong.html" class="pilih">Memotong</a>
-			<a href="jahit.html" class="pilih">Dasar Jahit</a>
-			<a href="finishing.html" class="pilih">Penyelesaian</a>
-			<a href="video.html" class="pilih">Video</a></td></tr><hr>
+			<td>
+				<?php include('header.php') ?>
+			</td>
+		</tr>
+		<hr>
 	</table>
 	<div id="isi">
 	<table>
@@ -60,10 +57,10 @@
 		<li>Menyiapkan bahan<br><br>Bahan yang akan dipotong harus disiapkan dengan cermat untuk mencegah terjadinya kegagalan produksi (pembuatan busana).<ol type="A">
 		<li>Kualitas bahan harus bagus, baik struktur tenunannya maupun penyempurnaan akhirnya.<ul>
 		<li>Jika bahan dipotong tidak lurus pada saat membeli bahan, maka bahan harus diluruskan dengan cara memotong lurus menurut arah benang pakan yang ditarik.
-		<br><img src="kualitasbahan.jpg"><br>
+		<br><img src="images/kualitasbahan.jpg"><br>
 		<li>Jika bahan yang akan dipotong diperkirakan menyusut maka bahan tersebut harus dicuci terlebih dahulu.
 		<li>Jika bahan yang akan dipotong kusut, maka harus disetrika terlebih dahulu.
-		<li>Bahan ditarik keempat arah agar lurus<br><img src="bahanditarik.jpg">
+		<li>Bahan ditarik keempat arah agar lurus<br><img src="images/bahanditarik.jpg">
 
 		<li>Bahan dilipat dua pada lebar bahan
 		<li>Bagian buruk kain berada disebelah luar<ol type="i">
@@ -111,23 +108,23 @@
 		Sumber:https://ontbpwjt.wordpress.com/2017/04/01/teknik-memotong-bahan/<br></ol></ol></span></p>
 			<button onclick="myFunction()" id="myBtn">Read more</button>
 		<hr></hr>
-		Ayoo ... Kirimkan kesan dan pesanmu dengan <a href ="about.html" >Klik Disini</a><br><br><br>
+		Ayoo ... Kirimkan kesan dan pesanmu dengan <a href ="about.php" >Klik Disini</a><br><br><br>
 		
 		</td>
 		<td id="isitable" valign="top">
 			<div class="dropdown"><hr>
   						<h3><span><b><center><u>Video Terkait</u></center></b></span></h3>
   						<div class="dropdown-content">
-    						<a href="video.html"><p><b>Mengukur Badan</b></p></a>
-							<a href="video.html"><p><b>Peralatan Menjahit</b></p></a>
-							<a href="video.html"><p><b>Pola Badan</b></p></a>
-    						<a href="video.html"><p><b>Pola Lengan </b></p></a>
-    						<a href="video.html"><p><b>Pola Rok</b></p></a>
-							<a href="video.html"><p><b>Pola Celana</b></p></a>
-							<a href="video.html"><p><b>Memotong</b></p></a>
-							<a href="video.html"><p><b>Memasang Jarum</b></p></a>
-							<a href="video.html"><p><b>Memasang Benang</b></p></a>
-							<a href="video.html"><p><b>Dll</b></p></a>
+    						<a href="video.php"><p><b>Mengukur Badan</b></p></a>
+							<a href="video.php"><p><b>Peralatan Menjahit</b></p></a>
+							<a href="video.php"><p><b>Pola Badan</b></p></a>
+    						<a href="video.php"><p><b>Pola Lengan </b></p></a>
+    						<a href="video.php"><p><b>Pola Rok</b></p></a>
+							<a href="video.php"><p><b>Pola Celana</b></p></a>
+							<a href="video.php"><p><b>Memotong</b></p></a>
+							<a href="video.php"><p><b>Memasang Jarum</b></p></a>
+							<a href="video.php"><p><b>Memasang Benang</b></p></a>
+							<a href="video.php"><p><b>Dll</b></p></a>
   						</div>
 			</div>
 		

@@ -16,20 +16,17 @@
 	
 	<table>
 	<tr>
-		<td><a href ="index.html" class="pilih" >Home</a>
-			<a href="halawal.html" class="pilih">Pengertian</a>
-			<a href="tekdasar.html" class="pilih">Teknik Dasar</a>
-			<a href="pola.html" class="pilih">Dasar Pola</a>
-			<a href="memotong.html" class="pilih">Memotong</a>
-			<a href="jahit.html" class="pilih">Dasar Jahit</a>
-			<a href="finishing.html" class="pilih">Penyelesaian</a>
-			<a href="video.html" class="pilih">Video</a></td></tr><hr>
+		<td>
+			<?php include('header.php') ?>
+		</td>
+		</tr>
+		<hr>
 	</table>	
 	<div >
 	<table>
 		<tr>
 			<td id="isitablediri"><hr>
-		<img src="nur.jpg" id="img"><br><br>
+		<img src="images/nur.jpg" id="img"><br><br>
 		<p>Assalamu alaikum Wr.Wb</p>
 		<p>Perkenalkan nama saya Nur Khasanah, saya berasal dari kota Purwokerto, Saya lahir di Banyumas, Tahun 1998, dan saat ini saya berusia 20 tahun.
 		Saya kuliah di Universitas Pamulang jurusan Teknik Informatika semester 5, dan saya juga bekerja di salah satu perusahaan pembiayaan di Jakarta.

@@ -13,15 +13,12 @@
 		</table>
 	
 	<table>
-	<tr>
-		<td><a href ="index.html" class="pilih" >Home</a>
-			<a href="halawal.html" class="pilih">Pengertian</a>
-			<a href="tekdasar.html" class="pilih">Teknik Dasar</a>
-			<a href="pola.html" class="pilih">Dasar Pola</a>
-			<a href="memotong.html" class="pilih">Memotong</a>
-			<a href="jahit.html" class="pilih">Dasar Jahit</a>
-			<a href="finishing.html" class="pilih">Penyelesaian</a>
-			<a href="video.html" class="pilih">Video</a></td></tr><hr>
+		<tr>
+			<td>
+				<?php include('header.php') ?>
+			</td>
+		</tr>
+		<hr>
 	</table>	
 	<div id="isi">
 	<table>
@@ -97,22 +94,22 @@
 			
 
 			<hr></hr>
-				Ayoo ... Kirimkan kesan dan pesanmu dengan <a href ="about.html" >Klik Disini</a><br><br>
+				Ayoo ... Kirimkan kesan dan pesanmu dengan <a href ="about.php" >Klik Disini</a><br><br>
 				
 		<td id="isitable" valign="top">
 			<div class="dropdown"><hr>
   						<h3><span><b><center><u>Video Terkait</u></center></b></span></h3>
   						<div class="dropdown-content">
-    						<a href="video.html"><p><b>Mengukur Badan</b></p></a>
-							<a href="video.html"><p><b>Peralatan Menjahit</b></p></a>
-							<a href="video.html"><p><b>Pola Badan</b></p></a>
-    						<a href="video.html"><p><b>Pola Lengan </b></p></a>
-    						<a href="video.html"><p><b>Pola Rok</b></p></a>
-							<a href="video.html"><p><b>Pola Celana</b></p></a>
-							<a href="video.html"><p><b>Memotong</b></p></a>
-							<a href="video.html"><p><b>Memasang Jarum</b></p></a>
-							<a href="video.html"><p><b>Memasang Benang</b></p></a>
-							<a href="video.html"><p><b>Dll</b></p></a>
+    						<a href="video.php"><p><b>Mengukur Badan</b></p></a>
+							<a href="video.php"><p><b>Peralatan Menjahit</b></p></a>
+							<a href="video.php"><p><b>Pola Badan</b></p></a>
+    						<a href="video.php"><p><b>Pola Lengan </b></p></a>
+    						<a href="video.php"><p><b>Pola Rok</b></p></a>
+							<a href="video.php"><p><b>Pola Celana</b></p></a>
+							<a href="video.php"><p><b>Memotong</b></p></a>
+							<a href="video.php"><p><b>Memasang Jarum</b></p></a>
+							<a href="video.php"><p><b>Memasang Benang</b></p></a>
+							<a href="video.php"><p><b>Dll</b></p></a>
   						</div>
 			</div>
 		

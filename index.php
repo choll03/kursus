@@ -7,13 +7,15 @@
 <body>
 
 
-<table width="1000px"><div id="header-index">
+<table width="1000px">
+<div id="header-index">
 
 	<tr>
 		<td  align="right" cellpadding="10" cellspacing="10">
-		&nbsp;&nbsp;<b><a href ="index.html" class="pilih">Home</a>
-		&nbsp;&nbsp;<b><a href ="halawal.html" class="pilih">Menu</a>
-		&nbsp;&nbsp;<b><a href ="about.html" class="pilih">Contact</a>
+		&nbsp;&nbsp;<b><a href ="index.php" class="pilih">Home</a>
+		&nbsp;&nbsp;<b><a href ="halawal.php" class="pilih">Tutorial</a>
+		&nbsp;&nbsp;<b><a href ="about.php" class="pilih">Contact</a>
+		&nbsp;&nbsp;<b><a href ="login.php" class="pilih">Jadwal Kursus</a>
 		<hr>
 		</td>
 		

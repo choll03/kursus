@@ -14,6 +14,7 @@
 <html>
 <head>
 	<title></title>
+	<link rel ="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <form action="proses_login.php" method="post">
@@ -28,6 +29,7 @@
 
 	<input type="submit" value="login">
 </form>
+	<p>Tidak memliki akun? silahkan <a href="registrasi.php">Registrasi</a></p>
 
 	<?php if(isset($_SESSION['error'])){ ?>
         <p><?php echo $_SESSION['error'] ?></p>
