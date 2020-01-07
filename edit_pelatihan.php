@@ -1,29 +1,16 @@
 <?php
     session_start();
     
-    if(!$_SESSION['user']){
+    if(!$_SESSION['user'] || $_SESSION['user']['username'] != 'admin'){
         header('Location: login.php');
     }
 
     require('koneksi.php');
+    $id = $_GET['id'];
 
-    $query = 'SELECT pelatihan.*, ( SELECT COUNT(id) FROM pelatihan_user WHERE pelatihan_user.pelatihan_id = pelatihan.id ) AS jumlah FROM pelatihan';
-	
-	
-	$search = "";
-
-	if(isset($_GET['search'])){
-		$search = $_GET['search'];
-		if($search != "")
-		{
-			$query .= ' WHERE kode_pelatihan LIKE "%'. $search .'%"';
-		}
-	}
-	
-	$result = mysqli_query($db, $query);
-	$id = $_SESSION['user']['id'];
-	
-	
+    $query = 'SELECT * FROM pelatihan WHERE id="'. $id .'"';
+    $result = mysqli_query($db, $query);
+    $row = mysqli_fetch_object($result);
 ?>
 
 <html>
@@ -56,43 +43,41 @@
 	<table >
 		<tr>
 			<td id="isitable" width="100%"><hr>
-			<h2>Jadwal Pelatihan</h2>
+			<h2>Edit Pelatihan</h2>
             <?php if(isset($_SESSION['flash_message'])){ ?>
                 <p style="color: red"><?php echo $_SESSION['flash_message'] ?></p>
             <?php } ?>
-			<form>
-				<input type="text" name="search" value="<?php echo $search ?>">
-				<input type="submit" value="Cari">
-			</form>
-            <table width="100%" style="text-align: center" border="1">
-                <tr>
-                    <th>Kode pelatihan</th>
-                    <th>Tanggal</th>
-                    <th>Jam mulai</th>
-                    <th>Jam selesai</th>
-                    <th>Jumlah</th>
-                    <th>Pengajar</th>
-                    <th>Action</th>
-                </tr>
-                <?php while($row = mysqli_fetch_object($result)){ ?>
+            <form action="update_pelatihan.php" method="post">
+                <table width="100%" cellpadding="10">
+                    <!-- <tr>
+                        <td align="right" width="20%">Kode Pelatihan</td>
+                        <td align="left"><input type="text" name="kode_pelatihan"></td>
+                    </tr> -->
                     <tr>
-                        <td><?php echo $row->kode_pelatihan ?></td>
-                        <td><?php echo date_format(date_create($row->tanggal), "d/m/Y") ?></td>
-                        <td><?php echo $row->jam_masuk ?></td>
-                        <td><?php echo $row->jam_keluar ?></td>
-                        <td><?php echo $row->jumlah ?></td>
-                        <td><?php echo $row->pengajar ?></td>
-                        <td>
-                            <a href="join_pelatihan.php?id=<?php echo $row->id ?>">Join</a>
-                            <a href="detail_pelatihan.php?id=<?php echo $row->id ?>">Detail</a>
-							<?php if($_SESSION['user']['username'] == 'admin'){ ?>
-								<a href="edit_pelatihan.php?id=<?php echo $row->id ?>">Edit</a>
-								<a href="hapus_pelatihan.php?id=<?php echo $row->id ?>" onclick="return confirm('Anda yakin ingin menghapusnya?')" >Hapus</a>
-							<?php } ?>
+                        <td align="right" width="20%">Pengajar</td>
+                        <td align="left"><input type="text" name="pengajar" value="<?php echo $row->pengajar ?>"></td>
+                        <td align="left"><input type="hidden" name="id" value="<?php echo $row->id ?>"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Tanggal</td>
+                        <td align="left"><input type="date" name="tanggal" value="<?php echo $row->tanggal ?>"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Jam Masuk</td>
+                        <td align="left"><input type="time" name="jam_masuk" value="<?php echo $row->jam_masuk ?>" ></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Jam Keluar</td>
+                        <td align="left"><input type="time" name="jam_keluar" value="<?php echo $row->jam_keluar ?>"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left">
+                            <input type="submit" value="Simpan" name="simpan">
                         </td>
                     </tr>
-                <?php } ?>
-            </table>
+                </table>
+            </form>
 		</td>
 		<td id="isitable" valign="top">
 			<div class="dropdown"><hr>
